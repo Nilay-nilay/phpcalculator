@@ -1,0 +1,235 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+function parmit()
+
+{
+
+var x=document.forms["frm"]["name"].value; 
+var m=document.forms["frm"]["upass"].value;
+var n=document.forms["frm"]["cpass"].value;
+var chk1=document.forms["frm"].gender[0].checked;
+var chk2=document.forms["frm"].gender[1].checked;
+var d=document.forms["frm"]["img"].value;
+
+if(x==null || x=="")
+
+{
+alert("Name should not be blank"); 
+return false;
+
+}
+
+else if(m==null || m=="")
+{
+alert("Password should not be blank"); 
+return false;
+}
+
+else if(m!=n)
+
+{ 
+alert("Password does not matched"); 
+return false;
+
+}
+
+else if(m.length!=6)
+
+{ alert("YOU HAVE TO ENTER 6 CHARECTERS"); 
+return false;
+
+}
+
+else if(chk1==false && chk2==false)
+{
+
+alert("SELECT YOUR GENDER");
+return false;
+}
+else if (d==null || d== "" )
+{ 
+alert("You have to post your current photo")
+return false;
+
+}
+else if(d.substring(nl)!= ".jpg")
+{
+
+alert("The extension should be in jpg");
+
+
+
+
+if(document.form1.chk.value=="")
+{
+document.getElementById("error").innerHTML="Enter captcha!";
+document.form1.chk.focus();
+return false;
+}
+
+if(document.form1.ran.value!=document.form1.chk.value)
+{
+document.getElementById("error").innerHTML="captcha Not Matched!";
+document.form1.chk.focus();
+return false;
+}
+
+return true;
+}
+
+
+
+
+</script>
+
+<style type="text/css">
+body{background-image:url(bank2.jpg);
+background-size:cover;
+}
+.aa{width:320px;
+height:300px;
+background-color:#B7F8F6;
+margin:auto;
+margin-top:200px;
+padding-top:10px;
+padding-left:50px;
+border radius:30px;
+-webkit-border-radius:30px;
+-0-border-radius:30px;
+-moz-border-radius:30px;
+color:black;
+font-weight:bolder;
+/*box-shadow:inset-4px-4px rgba(0,0,0,0.5);*/
+opacity:.6;
+}
+
+.aa input[type="password"]{width:250px;
+height:35px;
+background-color:FFFFF;
+border:none;
+border-radius:15px;
+-webkit-boder-radius:15px;
+-0-border-radius:15px;
+-moz--border-radius:15px;
+
+}
+
+.aa input[type="text"]{width:250px;
+height:35px;
+color:00001;
+background-color:FFFFF;
+border:none;
+border-radius:15px;
+-webkit-boder-radius:15px;
+-0-border-radius:15px;
+-moz--border-radius:15px;
+}
+
+.aa input[type="Phone No."]{width:250px;
+height:35px;
+background-color:FFFFF;
+border:none;
+border-radius:15px;
+-webkit-boder-radius:15px;
+-0-border-radius:15px;
+-moz--border-radius:15px;
+}
+
+.aa input[type="submit"]{width:100px;
+height:35px;
+border:none;
+color:8C9894;
+border-radius:15px;
+-webkit-boder-radius:15px;
+-0-border-radius:15px;
+-moz--border-radius:15px;
+background-color:55FED1;
+font-weight:bolder;
+}
+
+
+.catcha
+{
+width:60px;
+background-image:url();
+font-size:20px;
+border:2px solid;
+}
+.color
+{
+color:#FF0000;
+}
+
+
+</style>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Untitled Document</title>
+</head>
+
+
+
+
+
+
+
+
+<body>
+<div class="aa">
+
+<form name ="frm" method ="post" action="show.php" enctype="multipart/form-data" onsubmit ="return parmit()">
+<table align="center" bgcolor="red">
+<tr>
+<td>name</d><td><input type="text" name="name"/><td>
+</tr>
+<tr>
+<td>Address</td><td><input type="text" name="address" /></td>
+</tr>
+<tr>
+<td>password</td><td><input type="password" name="upass" /></td>
+</tr>
+<tr>
+<td>confirm password</td><td><input type="password" name="cpass" /></td>
+</tr>
+<tr>
+<td>Male<input type="radio" name="gender" value="male"/></td>
+<td>Female<input type="radio" name="gender" value="female"/></td>
+</tr>
+
+
+<tr>
+<td>Enter captcha:</td>
+<td><input type="text" name="chk" id="chk">
+<span id="error" class="color"></span>
+</td>
+</tr>
+<td>&nbsp;</td>
+
+<td><input type="text" value="26" id="ran" readonly="readonly" class="captcha">
+<input type="button" value="Referesh" onclick="Captch()"/></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" name="check" onclick="return validation();"/></td>
+</table>
+</form>
+
+
+
+
+<tr>
+<td>Current photo</td><td><input type="file" name="img" /></td>
+</tr>
+<tr>
+<td>colspan="2" align="center"</td><td><input type="submit" value="SUBMIT"/></td>
+</tr>
+</table>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {background-image:url(blue.jpg);
+background-size:cover;
+     font-family:Arial, sans-serif;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 height: 100vh;
+	 margin: 0;
+	 
+}
+
+.calculator-container  {
+    background:-moz-linear-gradient(left,#F9F 0%,#4CFEE44CFEE4 100%);
+	background:-webkit-linear-gradient(left,#F9F 0%,#4CFEE4 100%);
+	
+
+   background-color:#9EE0F9;
+   padding: 20px;
+   border-radius: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+   text-align: center;
+   color:purple;
+   width: 360px;
+
+}
+
+h1 {
+    margin-bottom:20px;
+
+}
+
+form-group  {
+     margin-bottom: 15px;
+}
+
+label {
+     display: block;
+	 margin-bottom: 40px;
+	 text-align: left;
+}
+
+input { 
+    background:-moz-linear-gradient(left,#D3FCF6 0%,#F9F 100%);
+	background:-webkit-linear-gradient(left,#D3FCF6 0%,#F9F 100%);
+   width: 100%;
+   padding: 8px;
+   box-sizing:  border-box;
+   border-radius: 15px;
+}
+
+button  {
+        padding: 10px 20px;
+		background-color: #007bff;
+		color:white;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 16px;
+   
+}
+button:hover{
+   background-color:#0056b3;
+}
+
+.result {
+   margin-top: 20px;
+}
+
+#monthlypayment {
+    color:#007bff;
+	font-weight: bold;
+
+}

@@ -1,0 +1,18 @@
+/* css Document*/
+
+#myGallery{
+  position:relative;
+  width:400px;
+  height:300px;
+}
+#myGallery img{
+   display:none;
+   
+   position:absolute;
+   top:0;
+   left:0;
+   
+}
+#myGallery img.active{
+  display:block;
+}

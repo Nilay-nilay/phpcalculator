@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+#myGallery{
+  position:relative;
+  width:400px; /* Set your image width */
+  height:300px; /* Set your image height */
+}
+#myGallery img{
+  display:none;
+  /*
+  position:absolute;
+  top:0;
+  left:0;
+  */
+}
+#myGallery img.active{
+  display:block;
+}
